@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: MyString
+  jalan_id: MyString
+  id_lokasi: MyString
+  id_jalan: MyString
+  latitude: MyString
+  longitude: MyString
+
+two:
+  id: MyString
+  jalan_id: MyString
+  id_lokasi: MyString
+  id_jalan: MyString
+  latitude: MyString
+  longitude: MyString

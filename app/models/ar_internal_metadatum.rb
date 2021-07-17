@@ -1,0 +1,2 @@
+class ArInternalMetadatum < ApplicationRecord
+end

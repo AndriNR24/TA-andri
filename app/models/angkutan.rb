@@ -1,0 +1,3 @@
+class Angkutan < ApplicationRecord
+	
+end

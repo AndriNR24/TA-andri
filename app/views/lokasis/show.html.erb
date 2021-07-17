@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id lokasi:</strong>
+  <%= @lokasi.id_lokasi %>
+</p>
+
+<p>
+  <strong>Id jalan:</strong>
+  <%= @lokasi.id_jalan %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @lokasi.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @lokasi.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_lokasi_path(@lokasi) %> |
+<%= link_to 'Back', lokasis_path %>

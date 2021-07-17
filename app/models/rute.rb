@@ -1,0 +1,2 @@
+class Rute < ApplicationRecord
+end

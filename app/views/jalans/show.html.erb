@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id jalan:</strong>
+  <%= @jalan.id_jalan %>
+</p>
+
+<p>
+  <strong>Nama jalan:</strong>
+  <%= @jalan.nama_jalan %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @jalan.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @jalan.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_jalan_path(@jalan) %> |
+<%= link_to 'Back', jalans_path %>

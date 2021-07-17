@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id angkutan:</strong>
+  <%= @angkutan.id_angkutan %>
+</p>
+
+<p>
+  <strong>Id trayek:</strong>
+  <%= @angkutan.id_trayek %>
+</p>
+
+<%= link_to 'Edit', edit_angkutan_path(@angkutan) %> |
+<%= link_to 'Back', angkutans_path %>
+
+<p>
+<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{@place.latitude},#{@place.longitude}&key=#{Rails.application.credentials.google_maps_api_key}", alt: "Map" %>
+</p>

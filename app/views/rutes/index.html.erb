@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rutes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id rute</th>
+      <th>Id angkutan</th>
+      <th>Id jalan</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rutes.each do |rute| %>
+      <tr>
+        <td><%= rute.id_rute %></td>
+        <td><%= rute.id_angkutan %></td>
+        <td><%= rute.id_jalan %></td>
+        <td><%= link_to 'Show', rute %></td>
+        <td><%= link_to 'Edit', edit_rute_path(rute) %></td>
+        <td><%= link_to 'Destroy', rute, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rute', new_rute_path %>

@@ -1,0 +1,2 @@
+class Lokasi < ApplicationRecord
+end

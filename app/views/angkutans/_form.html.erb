@@ -1,0 +1,27 @@
+<%= form_with(model: angkutan) do |form| %>
+  <% if angkutan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(angkutan.errors.count, "error") %> prohibited this angkutan from being saved:</h2>
+
+      <ul>
+        <% angkutan.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_angkutan %>
+    <%= form.text_field :id_angkutan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_trayek %>
+    <%= form.text_field :id_trayek %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

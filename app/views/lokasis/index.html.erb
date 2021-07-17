@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lokasis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id lokasi</th>
+      <th>Id jalan</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lokasis.each do |lokasi| %>
+      <tr>
+        <td><%= lokasi.id_jalan %></td>
+        <td><%= lokasi.latitude %></td>
+        <td><%= lokasi.longitude %></td>
+        <td><%= link_to 'Show', lokasi %></td>
+        <td><%= link_to 'Edit', edit_lokasi_path(lokasi) %></td>
+        <td><%= link_to 'Destroy', lokasi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lokasi', new_lokasi_path %>
